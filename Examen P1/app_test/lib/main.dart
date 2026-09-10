@@ -191,8 +191,8 @@ class _ReservaPageState extends State<ReservaPage> {
               margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
               padding: const EdgeInsets.all(16),
               decoration: BoxDecoration(
-                color: const Color(0xFFE4F2FD),
-                border: Border.all(color: const Color(0xFFA5C4D9), width: 2),
+                color: Colors.white,
+                border: Border.all(color: Colors.black, width: 0.5),
                 borderRadius: BorderRadius.circular(12),
               ),
               child: Column(
@@ -200,14 +200,26 @@ class _ReservaPageState extends State<ReservaPage> {
                 children: [
                   Row(
                     children: [
-                      const Icon(Icons.info_outline, color: Color(0xFF447391)),
+                      Container(
+                        width: 40,
+                        height: 40,
+                        alignment: Alignment.center,
+                        decoration: BoxDecoration(
+                          color: const Color(0xFFE4F2FD),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child: const Icon(Icons.info_outline, color: Color(0xFF447391)),
+                      ),
                       const SizedBox(width: 8),
-                      const Text('Sección 1 · Información general'),
+                      const Text(
+                        'Sección 1 · Información general',
+                        style: TextStyle(color: Color(0xFF447391)),
+                      ),
                     ],
                   ),
-                  const Text('Completa tu reserva paso a paso'),
+                  const Text('Completa tu reserva paso a paso', style: TextStyle(color: Colors.grey)),
                   const SizedBox(height: 8),
-                  const Text('Llena tus datos, elige destino y confirma tu viaje.'),
+                  const Text('Llena tus datos, elige destino y confirma tu viaje.', style: TextStyle(color: Colors.grey)),
                 ],
               ),
             ),
@@ -217,8 +229,8 @@ class _ReservaPageState extends State<ReservaPage> {
               margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
               padding: const EdgeInsets.all(16),
               decoration: BoxDecoration(
-                color: const Color(0xFFE8F6E9),
-                border: Border.all(color: const Color(0xFFB5CDB7), width: 2),
+                color: Colors.white,
+                border: Border.all(color: Colors.black, width: 0.5),
                 borderRadius: BorderRadius.circular(12),
               ),
               child: Column(
@@ -226,12 +238,24 @@ class _ReservaPageState extends State<ReservaPage> {
                 children: [
                   Row(
                     children: [
-                      const Icon(Icons.person, color: Color(0xFF3C8D41)),
+                      Container(
+                        width: 40,
+                        height: 40,
+                        alignment: Alignment.center,
+                        decoration: BoxDecoration(
+                          color: const Color(0xFFE8F6E9),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child: const Icon(Icons.person, color: Color(0xFF3C8D41)),
+                      ),
                       const SizedBox(width: 8),
-                      const Text('Sección 2 · Datos del viajero'),
+                      const Text(
+                        'Sección 2 · Datos del viajero',
+                        style: TextStyle(color: Color(0xFF3C8D41)),
+                      ),
                     ],
                   ),
-                  const Text('¿Quién se va de viaje?'),
+                  const Text('¿Quién se va de viaje?', style: TextStyle(color: Colors.grey)),
                   const SizedBox(height: 12),
                   TextField(
                     controller: _nombreController,
@@ -260,8 +284,8 @@ class _ReservaPageState extends State<ReservaPage> {
               margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
               padding: const EdgeInsets.all(16),
               decoration: BoxDecoration(
-                color: const Color(0xFFFDF3E3),
-                border: Border.all(color: const Color(0xFFEFD3A3), width: 2),
+                color: Colors.white,
+                border: Border.all(color: Colors.black, width: 0.5),
                 borderRadius: BorderRadius.circular(12),
               ),
               child: Column(
@@ -269,12 +293,24 @@ class _ReservaPageState extends State<ReservaPage> {
                 children: [
                   Row(
                     children: [
-                      const Icon(Icons.location_on, color: Color(0xFFC97B29)),
+                      Container(
+                        width: 40,
+                        height: 40,
+                        alignment: Alignment.center,
+                        decoration: BoxDecoration(
+                          color: const Color(0xFFFDF3E3),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child: const Icon(Icons.location_on, color: Color(0xFFC97B29)),
+                      ),
                       const SizedBox(width: 8),
-                      const Text('Sección 3 · Destino y transporte'),
+                      const Text(
+                        'Sección 3 · Destino y transporte',
+                        style: TextStyle(color: Color(0xFFC97B29)),
+                      ),
                     ],
                   ),
-                  const Text('Elige tu aventura'),
+                  const Text('Elige tu aventura', style: TextStyle(color: Colors.grey)),
                   const SizedBox(height: 12),
                   Row(
                     children: [
@@ -395,8 +431,8 @@ class _ReservaPageState extends State<ReservaPage> {
               margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
               padding: const EdgeInsets.all(16),
               decoration: BoxDecoration(
-                color: const Color(0xFFF7EAF9),
-                border: Border.all(color: const Color(0xFFD7B8E0), width: 2),
+                color: Colors.white,
+                border: Border.all(color: Colors.black, width: 0.5),
                 borderRadius: BorderRadius.circular(12),
               ),
               child: Column(
@@ -404,12 +440,24 @@ class _ReservaPageState extends State<ReservaPage> {
                 children: [
                   Row(
                     children: [
-                      const Icon(Icons.tune, color: Color(0xFF8E44AD)),
+                      Container(
+                        width: 40,
+                        height: 40,
+                        alignment: Alignment.center,
+                        decoration: BoxDecoration(
+                          color: const Color(0xFFF7EAF9),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child: const Icon(Icons.tune, color: Color(0xFF8E44AD)),
+                      ),
                       const SizedBox(width: 8),
-                      const Text('Sección 4 · Extras y preferencias'),
+                      const Text(
+                        'Sección 4 · Extras y preferencias',
+                        style: TextStyle(color: Color(0xFF8E44AD)),
+                      ),
                     ],
                   ),
-                  const Text('Personaliza tu experiencia'),
+                  const Text('Personaliza tu experiencia', style: TextStyle(color: Colors.grey)),
                   const SizedBox(height: 12),
                   Container(
                     decoration: BoxDecoration(
@@ -476,7 +524,7 @@ class _ReservaPageState extends State<ReservaPage> {
                   const SizedBox(height: 8),
                   Container(
                     decoration: BoxDecoration(
-                      color: _notificaciones ? const Color(0xFFD9CCE8) : Colors.white,
+                      color: const Color(0xFFF7EAF9),
                       borderRadius: BorderRadius.circular(8),
                     ),
                     child: SwitchListTile(
@@ -497,7 +545,7 @@ class _ReservaPageState extends State<ReservaPage> {
                   Container(
                     padding: const EdgeInsets.all(12),
                     decoration: BoxDecoration(
-                      color: const Color(0xFFEDE0F5),
+                      color: const Color(0xFFF7EAF9),
                       borderRadius: BorderRadius.circular(12),
                     ),
                     child: Column(
@@ -675,54 +723,162 @@ class BoletoPage extends StatelessWidget {
                   const SizedBox(height: 16),
                   Row(
                     children: [
-                      const Icon(Icons.email),
-                      const SizedBox(width: 8),
-                      Text('Correo: $correo'),
+                      Container(
+                        width: 40,
+                        height: 40,
+                        alignment: Alignment.center,
+                        decoration: BoxDecoration(
+                          color: const Color(0xFFD4E9D5),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child: const Icon(Icons.email, color: Color(0xFF00695C)),
+                      ),
+                      const SizedBox(width: 12),
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            const Text('Correo', style: TextStyle(color: Colors.grey)),
+                            Text(correo, style: const TextStyle(fontWeight: FontWeight.bold)),
+                          ],
+                        ),
+                      ),
                     ],
                   ),
-                  const SizedBox(height: 8),
+                  const SizedBox(height: 12),
                   Row(
                     children: [
-                      const Icon(Icons.location_on),
-                      const SizedBox(width: 8),
-                      Text('Destino: $destino'),
-                      const Spacer(),
-                      Text(transporte),
+                      Container(
+                        width: 40,
+                        height: 40,
+                        alignment: Alignment.center,
+                        decoration: BoxDecoration(
+                          color: const Color(0xFFFDF3E3),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child: const Icon(Icons.location_on, color: Color(0xFFC97B29)),
+                      ),
+                      const SizedBox(width: 12),
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            const Text('Destino', style: TextStyle(color: Colors.grey)),
+                            Text(destino, style: const TextStyle(fontWeight: FontWeight.bold)),
+                          ],
+                        ),
+                      ),
+                      Container(
+                        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                        decoration: BoxDecoration(
+                          color: const Color(0xFFFDF3E3),
+                          borderRadius: BorderRadius.circular(20),
+                        ),
+                        child: Text(
+                          transporte,
+                          style: const TextStyle(color: Color(0xFFC97B29)),
+                        ),
+                      ),
                     ],
                   ),
-                  const SizedBox(height: 8),
+                  const SizedBox(height: 12),
                   Row(
                     children: [
-                      const Icon(Icons.star),
-                      const SizedBox(width: 8),
-                      Text('Extras: $extras'),
+                      Container(
+                        width: 40,
+                        height: 40,
+                        alignment: Alignment.center,
+                        decoration: BoxDecoration(
+                          color: const Color(0xFFF7EAF9),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child: const Icon(Icons.star, color: Color(0xFF8E44AD)),
+                      ),
+                      const SizedBox(width: 12),
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            const Text('Extras', style: TextStyle(color: Colors.grey)),
+                            Text(extras, style: const TextStyle(fontWeight: FontWeight.bold)),
+                          ],
+                        ),
+                      ),
                     ],
                   ),
-                  const SizedBox(height: 8),
+                  const SizedBox(height: 12),
                   Row(
                     children: [
-                      const Icon(Icons.notifications),
-                      const SizedBox(width: 8),
-                      Text('Notificaciones: ${notificaciones ? "Activadas" : "Desactivadas"}'),
-                      const Spacer(),
-                      Text('\$${presupuesto.round()}'),
+                      Container(
+                        width: 40,
+                        height: 40,
+                        alignment: Alignment.center,
+                        decoration: BoxDecoration(
+                          color: const Color(0xFFD6EAF8),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child: const Icon(Icons.notifications, color: Color(0xFF3498DB)),
+                      ),
+                      const SizedBox(width: 12),
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            const Text('Notificaciones', style: TextStyle(color: Colors.grey)),
+                            Text(
+                              notificaciones ? 'Activadas' : 'Desactivadas',
+                              style: const TextStyle(fontWeight: FontWeight.bold),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Text(
+                        '\$${presupuesto.round()}',
+                        style: const TextStyle(color: Color(0xFF00695C), fontWeight: FontWeight.bold),
+                      ),
                     ],
                   ),
-                  const SizedBox(height: 8),
+                  const SizedBox(height: 12),
                   Row(
                     children: [
-                      const Icon(Icons.calendar_month),
-                      const SizedBox(width: 8),
-                      Text('Fecha: $fecha'),
+                      Container(
+                        width: 40,
+                        height: 40,
+                        alignment: Alignment.center,
+                        decoration: BoxDecoration(
+                          color: const Color(0xFFE4F2FD),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child: const Icon(Icons.calendar_month, color: Color(0xFF447391)),
+                      ),
+                      const SizedBox(width: 12),
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            const Text('Fecha', style: TextStyle(color: Colors.grey)),
+                            Text(fecha, style: const TextStyle(fontWeight: FontWeight.bold)),
+                          ],
+                        ),
+                      ),
                     ],
                   ),
                   const SizedBox(height: 24),
-                  ElevatedButton.icon(
-                    onPressed: () {
-                      Navigator.pop(context);
-                    },
-                    icon: const Icon(Icons.arrow_back),
-                    label: const Text('Regresar y editar'),
+                  SizedBox(
+                    width: double.infinity,
+                    child: ElevatedButton.icon(
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: const Color(0xFF00695C),
+                        foregroundColor: Colors.white,
+                        padding: const EdgeInsets.symmetric(vertical: 14),
+                        shape: const StadiumBorder(),
+                      ),
+                      onPressed: () {
+                        Navigator.pop(context);
+                      },
+                      icon: const Icon(Icons.arrow_back),
+                      label: const Text('Regresar y editar'),
+                    ),
                   ),
                 ],
               ),
