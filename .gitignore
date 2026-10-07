@@ -1,0 +1,10 @@
+Material de clase/
+
+p2_actividad2/node_modules/
+p2_actividad2/.agents/
+p2_actividad2/package.json
+p2_actividad2/package-lock.json
+p2_actividad2/skills-lock.json
+
+.env
+*.env
